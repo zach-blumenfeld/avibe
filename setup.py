@@ -15,8 +15,17 @@ setup(
     include_package_data=True,
     python_requires=">=3.6",
     install_requires=[
-        "nest_asyncio",
+        "nest-asyncio",
     ],
+    extras_require={
+        "test": [  # Test-specific dependencies
+            "unittest",  # Built-in library if using unittest (optional to specify here)
+            "nbconvert",  # For running notebooks as tests
+            "nbformat",  # Parsing Jupyter Notebooks
+            "jupyter",  # Supporting Jupyter integration
+            "pytest",  # An alternative test runner
+        ],
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
