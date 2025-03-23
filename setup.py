@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="avibe",
-    version="0.2.0",
+    version="0.3.0",
     description="Utility for executing python async functions everywhere the same way - scripts, notebooks, etc.",
     long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
